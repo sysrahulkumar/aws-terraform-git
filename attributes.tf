@@ -13,14 +13,6 @@
 # secret_key = "+x40Hq+ErG75sioFuGzHmvdzP0XmkZM5AdmZlaCT"
 #}
 
-resource "aws_eip" "lb1" {
-vpc = true
-}
-
-output "eip" {
-value = aws_eip.lb.public_ip
-}
-
 #resource "aws_s3_bucket" "mys3bucket" {
 #bucket = "training-day-002"
 #}
@@ -43,4 +35,4 @@ allocation_id = aws_eip.lb1
 
 #provider "github"{
 #token = "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"
-#}
+}
